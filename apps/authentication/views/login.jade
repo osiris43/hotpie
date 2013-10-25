@@ -1,8 +1,10 @@
-form(action='/session', method='post')
-  label
-    | Username
-    input(type='text', name='user')
-  label
-    | Password
-    input(type='password', name='password')
-  input(type='submit', name='Submit')
+extends ../../../views/layout
+block content
+  form(action='/session', method='post')
+    label
+      | Username
+      input(type='text', name='user')
+    label
+      | Password
+      input(type='password', name='password')
+    input(type='submit', name='Submit')
